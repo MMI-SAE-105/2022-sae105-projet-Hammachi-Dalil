@@ -1,7 +1,7 @@
-- NOM : 
-- PRÉNOM :
-- URL du site :
-- URL FIGMA :
+- NOM : Hammachi
+- PRÉNOM : Dalil
+- URL du site : 
+- URL FIGMA : https://www.figma.com/file/wUC9KRhBGtGi141afUW6WO/Maquettes-projet-individuel-%E2%80%94-Dalil-HAMMACHI?node-id=818%3A795&t=WVSRhuWq98wGkKfh-1
 
 # Structure de départ pour le projet individuel.
 
