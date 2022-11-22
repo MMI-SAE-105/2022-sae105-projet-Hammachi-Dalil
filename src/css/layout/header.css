@@ -1,4 +1,4 @@
-header {
+.header {
     background-color: #CD5028;
     text-align: center;
     gap: 100px;
@@ -6,3 +6,9 @@ header {
     justify-content: space-between;
 
 }
+
+.header_nom_site {
+    font-family:var()
+
+}
+
