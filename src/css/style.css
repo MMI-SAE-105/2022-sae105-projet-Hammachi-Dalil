@@ -1,3 +1,7 @@
+/* Les polices de caractère */
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Inter:wght@300&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Inter:wght@300&family=Playfair+Display:wght@700&display=swap');
+
 /* Les Librairies*/
 @import "./vendor/normalize.css";
 
