@@ -26,3 +26,11 @@ h1 {
 h2 {
     color: #FDDE3C;
 }
+
+button {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
