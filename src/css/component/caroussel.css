@@ -33,13 +33,14 @@ max-width width width
     /* change le box model */
     box-sizing: border-box;
     }
-    img {
+img {
       /* image responsive, largeur maxi */
       max-width: 100%;
+      width: auto;
       /* hauteur "auto" */
       height: auto;
     }
-    .carrousel_parent-ecrans {
+.carrousel_parent-ecrans {
       /* aligne horizontalement les enfants */
       display: flex;
       /* largeur du parent */
@@ -50,7 +51,7 @@ max-width width width
       gap: 2rem;
     }
 
-    .carrousel_ecran {
+.carrousel_ecran {
       /* largeur du parent pour chaque enfant */
       width: auto;
       /* permet de garder toute la largeur du parent */
@@ -59,7 +60,7 @@ max-width width width
       scroll-snap-align: start;
 
     }
-    .carrousel_ecran figure {
+.carrousel_ecran figure {
       /* enlève les marges par défaut */
       margin: 0;
     }
