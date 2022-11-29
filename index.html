@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Page d'accueil</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
     <header class="header">
@@ -18,11 +19,59 @@
         <button class="header__menu-btn menu-btn">
             <span class="menu-btn__bar"></span>
         </button>
-    </header>
+    </header> 
     <main>
+        <div class="carrousel" x-data="{}">
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"></button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"></button>
+            <div class="carrousel_parent-ecrans">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="./public/img/w (3).webp" alt="image ecran 1">
+                        <figcaption>Ecran 1</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="./public/img/one_piece 1.webp" alt="image ecran 2">
+                        <figcaption>Ecran 2</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="./public/img/OIP 2.webp" alt="image ecran 3">
+                        <figcaption>Ecran 3</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="./public/img/energie-renouvelable 3.webp" alt="image ecran 4">
+                        <figcaption>Ecran 4</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="./public/img/disney1 (1).webp" alt="image ecran 5">
+                        <figcaption>Ecran 5</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img src="./public/img/rech.webp" alt="image ecran 6">
+                        <figcaption>Ecran 6</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <ul class="caroussel_liste-liens">
+                <li><a href="#ecran-1" class="caroussel_lien">ecran 1</a></li>
+                <li><a href="#ecran-2" class="caroussel_lien">ecran 2</a></li>
+                <li><a href="#ecran-3" class="caroussel_lien">ecran 3</a></li>
+                <li><a href="#ecran-4" class="caroussel_lien">ecran 4</a></li>
+                <li><a href="#ecran-5" class="caroussel_lien">ecran 5</a></li>
+                <li><a href="#ecran-6" class="caroussel_lien">ecran 6</a></li>
+            </ul>
+        </div>
     <p>
         Bienvenu sur mon site. Dans celui-ci vous découvrirez des articles sur le Film Toy Story 3, le manga One Piece, la musique Wavin' Flag du chanteur Knaan, le parc Disneyland Paris, le réchauffement climatique et les énergies renouvelables.
-
     </p>
     <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem vitae, sit laboriosam illum nemo, aperiam quos, corrupti aliquid commodi a repudiandae incidunt deleniti voluptas eligendi temporibus! Alias itaque mollitia quidem!
