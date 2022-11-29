@@ -1,14 +1,17 @@
 .header {
     background-color: #CD5028;
     text-align: center;
-    gap: 100px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
 
 }
 
 .header_nom_site {
-    font-family:var()
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    justify-content: space-between;
 
 }
 
