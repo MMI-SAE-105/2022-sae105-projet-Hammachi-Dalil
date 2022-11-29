@@ -1,3 +1,28 @@
+.carrousel {
+    position: relative;
+  }
+
+  .carrousel_btn {
+    position: absolute;
+    top: 50%; /* centre verticalement */
+    transform: translateY(-50%); /* methode du point nort */
+    width: 2rem;
+    height: 2rem;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: #fff;
+  }
+
+  .carrousel_btn-avant {
+    left: 0;
+  }
+
+  .carrousel_btn-apres {
+    right: 0;
+  }
 
 /* en vrac :
 100% 100% 100% 0 auto border-box box-sizing 
@@ -6,6 +31,7 @@ max-width width width
 */ 
 * {
     /* change le box model */
+    box-sizing: border-box;
     }
     img {
       /* image responsive, largeur maxi */
@@ -18,12 +44,19 @@ max-width width width
       display: flex;
       /* largeur du parent */
       width: auto;
-    
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      gap: 2rem;
     }
+
     .carrousel_ecran {
       /* largeur du parent pour chaque enfant */
       width: auto;
       /* permet de garder toute la largeur du parent */
+      max-width: 100%;
+      flex: none;
+      scroll-snap-align: start;
 
     }
     .carrousel_ecran figure {
