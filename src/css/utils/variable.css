@@ -1,0 +1,14 @@
+:root {
+    /* Text-size styles */
+--title-1: 32px;
+--subtitle-1: 24px;
+--text: 20px;
+
+
+    /* Color styles */
+--color_subtitle: rgba(253, 222, 60, 1);
+--color_text: rgba(255, 255, 255, 1);
+--color_name_site: rgba(255, 255, 255, 1);
+--header--footer: rgba(205, 80, 40, 1);
+
+}

@@ -1,5 +1,5 @@
 .header {
-    background-color: #CD5028;
+    background-color: var(--header--footer);
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -11,6 +11,8 @@
     margin-bottom: 2%;
     margin-left: 2%;
     justify-content: space-between;
+    font-family: "Kanit";
+    font-size: var(--title-1);
 
 }
 

@@ -2,29 +2,25 @@ body {
     background-color: #1C467A;
 }
 
-footer {
-    text-align: center;
-    background-color: #CD5028;
-}
-
 p {
-    color: #FFFFFF;
+    color: var(--color_text);
+    font-family: "Kanit", "Arial",  sans-serif;
+    margin: 0.5rem;
 }
 
 h3 {
-    color: #FFFFFF;
+    color: var(--color_text);
 }
 
 a {
     text-decoration: none;
+    color: var(--color_text);
 }
 
-h1 {
-    color: #FDDE3C;
-}
-
-h2 {
-    color: #FDDE3C;
+h1, h2 {
+    color: var(--color_subtitle);
+    font-family: "Dangrek", "Arial", sans-serif;
+    margin: 0.5rem;
 }
 
 button {

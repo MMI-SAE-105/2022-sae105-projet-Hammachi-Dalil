@@ -58,9 +58,12 @@ img {
       max-width: 100%;
       flex: none;
       scroll-snap-align: start;
-
     }
 .carrousel_ecran figure {
       /* enlève les marges par défaut */
       margin: 0;
     }
+
+li {
+  display: block;
+}

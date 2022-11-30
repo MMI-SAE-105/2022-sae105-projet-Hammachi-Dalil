@@ -14,6 +14,7 @@
 
 /* layout */
 @import"./layout/header.css";
+@import"./layout/footer.css";
 
 /* composant */
 @import"./component/menu.css";
