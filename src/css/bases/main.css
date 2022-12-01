@@ -30,3 +30,14 @@ button {
     padding: 0;
     cursor: pointer;
   }
+
+figcaption {
+    font-family: "Kanit";
+    color: var(--color_text);
+    font-size: var(--subtitle-1);
+}
+
+ul {
+    font-size: var(--text);
+    font-family: "dangrek";
+}

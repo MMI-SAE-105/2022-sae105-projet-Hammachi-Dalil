@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Page d'accueil</title>
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
     <header class="header">
@@ -14,11 +15,19 @@
             <img src="./public/img/As Time Flies.svg">
         </a>
         <button>
-            <img src="./public/img/uk.webp" alt="image du drapeau américain">
+            <img src="./public/img/uk.webp" alt="image du drapeau américain" class="drapeau_americain">
         </button>
-        <button class="header__menu-btn menu-btn">
+        <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
             <span class="menu-btn__bar"></span>
         </button>
+        </button>
+      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <ul>
+          <li><a href="#">item 1</a></li>
+          <li><a href="#">item 2</a></li>
+          <li><a href="#">item 3</a></li>
+        </ul>
+      </nav>
     </header> 
     <main>
         <div class="carrousel" x-data="{}">
