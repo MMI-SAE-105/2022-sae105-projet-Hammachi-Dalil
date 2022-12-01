@@ -6,7 +6,10 @@
 
  /* Mise en forme du bouton de menu "Hamburger" */
 .menu {
-    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: aliceblue;
+    z-index: 1;
 }
 
  .menu-btn {
@@ -17,6 +20,7 @@
     margin-right: 2%;
     margin-bottom: 2%;
     justify-content: space-between;
+    z-index: 2;
   }
 
   .menu-btn__bar,
@@ -25,10 +29,11 @@
     content: "";
     height: 2px;
     width: 100%;
-    background-color: black;
+    background-color: #292525;
     display: block;
     position: absolute;
     left: 0;
+    z-index: 10;
     
   }
 

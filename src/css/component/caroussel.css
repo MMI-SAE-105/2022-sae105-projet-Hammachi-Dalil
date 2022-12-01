@@ -16,14 +16,6 @@
     color: #fff;
   }
 
-  .carrousel_btn-avant {
-    left: 0;
-  }
-
-  .carrousel_btn-apres {
-    right: 0;
-  }
-
 /* en vrac :
 100% 100% 100% 0 auto border-box box-sizing 
 display height flex flex none margin 
