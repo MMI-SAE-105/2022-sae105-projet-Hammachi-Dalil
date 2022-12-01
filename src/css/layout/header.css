@@ -16,7 +16,7 @@
 }
 
 .drapeau_americain {
-    width: 50%;
+    width: auto;
 }
 
 .noscroll,
@@ -40,3 +40,7 @@
     z-index: 10; /* pour que le bouton soit au dessus du menu*/
 }
 
+.version_anglaise {
+    width: 15%;
+    position: relative;
+}
