@@ -1,4 +1,14 @@
 footer {
     text-align: center;
     background-color: var(--header--footer);
+    margin-bottom: 0;
+}
+
+.descriptif {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.logo_mmi {
+    padding-top: 20px;
 }
