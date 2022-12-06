@@ -55,6 +55,7 @@
     background-color: var(--header--footer);
     margin: 2rem;
     font-size: var(--title-1);
+    color: var(--color_text);
   }
 
   .menu__link__article {
@@ -63,6 +64,6 @@
     background-color: bisque;
     margin: 2rem;
     font-size: var(--title-1);
-    color: black;
+    color: var(--header--footer);
 
   }

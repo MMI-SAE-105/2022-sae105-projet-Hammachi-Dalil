@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }">
+<html lang="fr" x-data="{ menuIsOpen: false, menuArticle: false }">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,10 +28,12 @@
                 </li>
 
                 <li>
-                    <a class="menu__link">articles</a>
+                <button class="menu__link " @click="menuArticle = !menuArticle">articles</button>
+                <nav x-show="menuArticle">
+
                     <ul class="menu_articles">
                         <li class="menu__item">
-                            <a class="menu__link__article" href="./wavin_flag.html">wavin_flag</a>
+                            <a class="menu__link__article" href="./wavin_flag.html">wavin' flag</a>
                         </li>
 
                         <li class="menu__item">
@@ -53,6 +55,7 @@
                             <a class="menu__link__article" href="./rechauffement_climatique.html">Réchauffement Climatique</a>
                         </li>
                     </ul>
+                </nav>
 
                 </li>
                 <li class="menu__item">
