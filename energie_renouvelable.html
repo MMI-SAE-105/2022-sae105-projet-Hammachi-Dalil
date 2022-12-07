@@ -1,21 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{ menuIsOpen: false, menuArticle: false }">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>energies renouvelable</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
     <header class="header">
         <a href="./index.html" class="header_nom_site">As Time Flies</a>
+
         <button>
             <img src="./public/img/uk.webp" alt="image du drapeau américain" class="drapeau_americain">
         </button>
-        <button class="header__menu-btn menu-btn">
+
+        <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
             <span class="menu-btn__bar"></span>
         </button>
+
+        <nav class="header_menu menu" x-show="menuIsOpen" x-transition>
+            <ul class="menu_list">
+                <li class="menu__item">
+                    <a class="menu__link" href="./index.html">accueil</a>
+                </li>
+
+                <li>
+                <button class="menu__link " @click="menuArticle = !menuArticle">articles</button>
+                <nav x-show="menuArticle" x-transition>
+
+                    <ul class="menu_articles">
+                        <li class="menu__item">
+                            <a class="menu__link__article" href="./wavin_flag.html">wavin' flag</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link__article" href="./one_piece.html">One Piece</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link__article" href="./toy_story.html">Toy Story 3</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link__article" href="./energie_renouvelable.html">Energies Renouvelables</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link__article" href="./disneyland.html">Disnayland</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link__article" href="./rechauffement_climatique.html">Réchauffement Climatique</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./a_propos.html">A propos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./autres_projets.html">Autres Projets</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./en_savoir_plus.html">En Savoir Plus</a>
+                </li>
+         
+            </ul>
+
+        </nav>
     </header>
     <h1>Les énergies non polluantes</h1>
     <img src="./public/img/energie-renouvelable 3.webp" alt="image energie renouvelable 1">
