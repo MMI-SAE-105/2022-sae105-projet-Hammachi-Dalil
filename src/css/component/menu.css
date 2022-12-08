@@ -14,6 +14,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: all 1s;
+}
+
+.menu--open {
+  transform: translateX(0);
+  visibility: visible;
 }
 
  .menu-btn {
