@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false, menuArticle: false }">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../en/index_en.html" class="header_nom_site">As Time Flies</a>
+
+        <button class="version_anglaise">
+          <a href="../en_savoir_plus.html">
+            <img src="./public/img/uk.webp" alt="image du drapeau américain" class="drapeau_americain">
+            </a>
+        </button>
+
+        <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header_menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu_list">
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/index_en.html">Home</a>
+                </li>
+                <li>
+                    <button class="menu__link " @click="menuArticle = !menuArticle">articles</button>
+                    <nav x-show="menuArticle" x-transition>
+    
+                        <ul class="menu_articles">
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/wavin_flag_en.html">wavin' flag</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/one_piece_en.html">One Piece</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/toy_story_en.html">Toy Story 3</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/renewable_enery.html">Renewable Energy</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/disneyland_en.html">Disnayland</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/climate_change.html">Climate Change</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/other_project.html">Other Project</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/contact_en.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/learn_more.html">Learn More</a>
+                </li>
+         
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Learn More</h1>
+        <ul class="disney-timeline">
+            <li>
+              <div class="timeline-badge">1</div>
+              <div class="timeline-panel">
+                <h3>Disneyland Park</h3>
+                <p>The first Disneyland park, located in Anaheim, California, opened in 1955. It is the oldest and most famous park in the Disneyland chain.</p>
+                <img src="../public/img/anaheim.jpg" alt="image disney anaheim" class="image_frise">
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-badge">2</div>
+              <div class="timeline-panel">
+                <h3>Walt Disney World Resort</h3>
+                <p>The Walt Disney World Resort, located in Orlando, Florida, opened in 1971. It includes four theme parks, two water parks, several hotels and a golf course.</p>
+                <img src="../public/img/floride.webp" alt="image disney Floride" class="image_frise">
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-badge">3</div>
+              <div class="timeline-panel">
+                <h3>Disneyland Paris</h3>
+                <p>Disneyland Paris, located in the Île-de-France region of France, opened in 1992. It is the second largest Disneyland park in terms of attendance.</p>
+                <img src="../public/img/disney1 (3).webp" alt="image disney Paris" class="image_frise">
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-badge">4</div>
+              <div class="timeline-panel">
+                <h3>Tokyo Disney Resort</h3>
+                <p>The Tokyo Disney Resort, located in Urayasu, Japan, opened in 1983. It includes two theme parks, a water park and several hotels.</p>
+                <img src="../public/img/tokyo.jpg" alt="image disney Japon" class="image_frise">
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-badge">5</div>
+              <div class="timeline-panel">
+                <h3>Hong Kong Disneyland</h3>
+                <p>Hong Kong Disneyland, located on Lantau Island in Hong Kong, opened in 2005. It is the smallest Disneyland park in terms of area.</p>
+                <img src="../public/img/Castle-of-Magical-Dreams-Hong-Kong-Disneyland-3.jpg" alt="image disney hong kong" class="image_frise">
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-badge">6</div>
+              <div class="timeline-panel">
+                <h3>Shanghai Disney Resort</h3>
+                <p>The Shanghai Disney Resort, located in Shanghai, China, opened in 2016. It includes a theme park, two hotels and a golf course.</p>
+                <img src="../public/img/shangai.jpg" alt="image disney Shanghai" class="image_frise">
+              </div>
+            </li>
+
+          </ul>
+          <h1> Filmography </h1>
+          <p>Lee Unkrich is an animated film director who works for Pixar Studios. He has 
+            directed the 4 films Toy Story, Coco, Nemo, Monster and Co., Monster 
+            Academy, 1001 Paws and Arlo's Journey</p>
+
+          <br>
+
+          <div class="filmographie">
+            <img src="../public/img/ts2.jpg" alt="image toy story">
+          </div>
+          <figcaption>TToy Story is a Pixar Studio film directed by Lee Unkrich released on February 2, 
+            2000 and is available for streaming on Disney+. It is the sequel to the first film 
+            which was a great success</figcaption>
+          <br>
+
+          <div class="filmographie">
+            <img src="../public/img/ts3.jpg" alt="image toy story">
+          </div>
+          <figcaption>Toy Story 3 is a Pixar Studios film directed by Lee Unlkrich and released on July 
+            14, 2010. It is the third film in the series and tells the story of the adventures of 
+            our favourite toy gang when their owner has to move away to go to university.
+             </figcaption>
+          <br>
+
+          <div class="filmographie">
+            <img src="../public/img/coco.jpg" alt="image toy story">
+          </div>
+          <figcaption>Coco is a Pixar Studios film directed by Lee Unkrich and released on 15 
+            November 2017. It tells the story of a young Mexican man, Miguel, who wants 
+            to become a musician but is forbidden to play music in his family because of his 
+            grandfather, whom he will seek to find in the world of the dead.</figcaption>
+          <br>
+
+          <div class="filmographie">
+            <img src="../public/img/nemo.jpg" alt="image toy story">
+          </div>
+          <figcaption>Nemo's World is a Pixar Studios film directed by Lee Unkrich released on 
+            January 16, 2013. The film tells the story of Marin, a clown fish who searches 
+            for his son Nemo who disappeared on a school trip with the help of Dory, a 
+            surgeon fish with amnesia.</figcaption>
+          <br>
+
+          <div class="filmographie">
+            <img src="../public/img/monstre_et_cie.jpg" alt="image toy story">
+          </div>
+          <figcaption>Monster & Co. is an animated film from Pixar Studios directed by Lee Unkrich 
+            released on March 20, 2002. The film tells the story of monsters that feed on 
+            the fear of children to fuel their energy. The monsters are afraid of children, so 
+            when a young girl infiltrates the monster's world, panic ensues.</figcaption>
+          <br> <br> <br>
+
+          <h1>Glossary</h1>
+
+          <p>Global warming: warming of the global climate due to the increase of CO2 in 
+            the atmosphere</p>
+          <p>Renewable energy : All energies that can be reused at will on a human scale and that do not pollute the planet. They are the opposite of fossil fuels. </p>
+          <p>One Piece : Legendary treasure left by the pirate king Gold Roger. No one knows what it 
+            contains to the point where some doubt its existence, but it is because of this 
+            treasure that the golden age of piracy took place. It is this treasure that gives 
+            the manga its name.</p>
+          <p>Paris Agreement:
+            Agreement signed on 12 December 2015 by 174 countries with the common 
+            goal of reducing greenhouse gas emissions to limit the global temperature 
+            increase to 1.5°C above pre-industrial levels.
+            </p>
+    </main>
+
+
+    <footer class="footer">
+        <button>
+            <img src="../public/img/mmi.svg" alt="logo MMI" class="logo_mmi">
+        </button>
+        <h3>Dalil Hammachi</h3>
+        <p class="descriptif">This site is realized within the framework of the studies in BUT MMI</p>
+    </footer>
+    
+</body>
+</html>

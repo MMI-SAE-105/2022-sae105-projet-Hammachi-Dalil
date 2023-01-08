@@ -1,53 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ menuIsOpen: false, menuArticle: false }">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wavin' flag</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
     <header class="header">
-        <a href="./index.html" class="header_nom_site">As Time Flies</a>
-        <button>
-            <img src="./public/img/uk.webp" alt="image du drapeau américain">
+        <a href="../en/index_en.html" class="header_nom_site">As Time Flies</a>
+
+        <button class="version_anglaise">
+            <a href="../wavin_flag.html">
+            <img src="./public/img/uk.webp" alt="image du drapeau américain" class="drapeau_americain">
+            </a>
         </button>
-        <button class="header__menu-btn menu-btn">
+
+        <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
             <span class="menu-btn__bar"></span>
         </button>
+
+        <nav class="header_menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu_list">
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/index_en.html">Home</a>
+                </li>
+                <li>
+                    <button class="menu__link " @click="menuArticle = !menuArticle">articles</button>
+                    <nav x-show="menuArticle" x-transition>
+    
+                        <ul class="menu_articles">
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/wavin_flag_en.html">wavin' flag</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/one_piece_en.html">One Piece</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/toy_story_en.html">Toy Story 3</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/renewable_enery.html">Renewable Energy</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/disneyland_en.html">Disnayland</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/climate_change.html">Climate Change</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/other_project.html">Other Project</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/contact_en.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/learn_more.html">Learn More</a>
+                </li>
+         
+            </ul>
+
+        </nav>
+
     </header>
     <h1>Wavin' Flag</h1>
-    <img src="./public/img/w (3).webp" alt="image Wavin flag 1">
-    <p>Wavin’ Flag est une musique d'artiste K’naan, de son vrai nom Keinan Abdi Warsame, né en 1978 en Somalie. 
-        La musique est sortie le 18 mars 2009 de son album Troubadour. 
-        Elle a notamment été l’objet d’une collaboration avec Coca-Cola pour en faire la chanson officielle de la coupe du monde 2010 de football qui se déroulait en Afrique du Sud. 
-        Elle cumule près de 400 millions de vue sur YouTube.
+    <img src="../public/img/w (3).webp" alt="image Wavin flag 1">
+    <p>Wavin' Flag is a music by artist K'naan, whose real name is Keinan Abdi 
+        Warsame, born in 1978 in Somalia. The music was released on 18 March 2009 
+        from his album Troubadour. It was notably the subject of a collaboration with 
+        Coca-Cola to make it the official song of the 2010 football World Cup in South 
+        Africa. It has almost 400 million views on YouTube.
     </p>
-    <h2>Des messages profond</h2>
-    <img src="./public/img/w (2).webp" alt="image wavin flag 2">
+    <h2>Profound Messages</h2>
+    <img src="../public/img/w (2).webp" alt="image wavin flag 2">
     <p>
-        La chanson transmet un sentiment de joie tant par la musique que par le clip, 
-        qui met en scène différentes jeunes personnes de pays pauvres d’Afrique et d’Asie qui passe de bons moments en jouant au foot. 
-        On voit des sourires sur leurs visages, profitant d’un moment de joie malgré leurs conditions de vie difficiles. 
-        Les paroles appuient sur les condition de vie difficiles ainsi que la façon dont certains peuples de ces zones géographiques sont traités. 
-        On sent à travers cette musique un artiste engagé, motivé par son vécu, lui qui a dû partir de Somalie, qui est déjà un pays assez pauvre, 
-        à cause de la guerre civile qui a éclaté en 1991. 
-        Il décide donc d’utiliser sa notoriété pour essayer d’aider et de faire porter autant qu’il le peut la voix de ces personnes pour qu’elle soient plus entendue.
+        The song conveys a sense of joy both through the music and the video, which 
+features various young people from poor countries in Africa and Asia having a 
+good time playing football. We see smiles on their faces, enjoying a moment of 
+joy despite their difficult living conditions. The lyrics highlight the difficult living 
+conditions and the way some people in these geographical areas are treated. 
+The music is the work of a committed artist, motivated by his own experience, 
+as he had to leave Somalia, which is already a rather poor country, because of 
+the civil war that broke out in 1991. He therefore decided to use his fame to try 
+to help and to make the voice of these people heard as much as he could.
     </p>
-    <h2>Un artiste engagé</h2>
-    <img src="./public/img/w (1).webp" alt="image wavin flag 3">
-    <p>En dépend de tous ces éléments négatifs, l’auteur garde un espoir de liberté en se comparant à un drapeau, métaphore de la liberté. 
-        Cette musique a aussi été remixé en 2010 afin de reverser tous les bénéfices engrangés grâce à elle aux victimes du tremblement de terre catastrophique qui avait frappé Haïti, 
-        s’ancrant dans un plus grand mouvement appelé « Young artist for Haïti », qui a rapporté plus d’1 million d’euros.
-        Cette action montre la gentillesse de l’artiste, qui malgré son succès n’oublie pas d’où il vient et n’hésite pas a venir en aide là où il le peut.
+    <h2>A committed artist</h2>
+    <img src="../public/img/w (1).webp" alt="image wavin flag 3">
+    <p>In spite of all these negative elements, the author keeps a hope of freedom by 
+        comparing himself to a flag, a metaphor of freedom. This music was also 
+        remixed in 2010 to donate all the profits from it to the victims of the 
+        catastrophic earthquake in Haiti, becoming part of a larger movement called 
+        'Young artist for Haiti', which raised more than 1 million euros. This action 
+        shows the kindness of the artist, who despite his success does not forget where 
+        he comes from and does not hesitate to help where he can
     </p>
     <footer class="footer">
         <button>
-            <img src="./public/img/mmi.svg" alt="logo MMI" class="logo_mmi">
+            <img src="../public/img/mmi.svg" alt="logo MMI" class="logo_mmi">
         </button>
         <h3>Dalil Hammachi</h3>
-        <p class="descriptif">Ce site est réalisé dans le cadre des étude en BUT MMI</p>
+        <p class="descriptif">This site is realized within the framework of the studies in BUT MMI</p>
     </footer>
 </body>
 </html>

@@ -1,24 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ menuIsOpen: false, menuArticle: false }">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Piece</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
     <header class="header">
-        <a href="./index.html" class="header_nom_site">As Time Flies</a>
-        <button>
-            <img src="./public/img/uk.webp" alt="image du drapeau américain">
+        <a href="../en/index_en.html" class="header_nom_site">As Time Flies</a>
+
+        <button class="version_anglaise">
+            <a href="../one_piece.html">
+            <img src="../index.html" alt="image du drapeau français" class="drapeau_americain">
+            </a>
         </button>
-        <button class="header__menu-btn menu-btn">
+
+        <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
             <span class="menu-btn__bar"></span>
         </button>
-    </header>
+
+        <nav class="header_menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu_list">
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/index_en.html">Home</a>
+                </li>
+                <li>
+                    <button class="menu__link " @click="menuArticle = !menuArticle">articles</button>
+                    <nav x-show="menuArticle" x-transition>
+    
+                        <ul class="menu_articles">
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/wavin_flag_en.html">wavin' flag</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/one_piece_en.html">One Piece</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/toy_story_en.html">Toy Story 3</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/renewable_enery.html">Renewable Energy</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/disneyland_en.html">Disnayland</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/climate_change.html">Climate Change</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/other_project.html">Other Project</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/contact_en.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/learn_more.html">Learn More</a>
+                </li>
+         
+            </ul>
+
+        </nav>
+
+    </header> 
     <h1>One Piece</h1>
-    <img src="./public/img/one_piece 1.webp" alt="image 1 One Piece">
+    <img src="../public/img/one_piece 1.webp" alt="image 1 One Piece">
     <h2>A manga with worldwide success</h2>
     <p>One Piece is a manga written and drawn by Eiichiro Oda and pre-published since July 22, 
         1997 and is still being published in the Japanese pre-publication magazine Weekly Shonen Jump. 
@@ -30,7 +89,7 @@
         is impressively coherent and remains credible in its universe despite the surreal things that happen there.
     </p>
     <h2>uncompromising consistency</h2>
-    <img src="./public/img/tmlbu5lfwq941 1.webp" alt="image 2 one piece">
+    <img src="../public/img/tmlbu5lfwq941 1.webp" alt="image 2 one piece">
         <p>
             This coherence is not due to chance since the author, having planned his story from the beginning, 
             takes great pleasure in leaving clues about the next part of the story that fans look for each week, chapter after chapter. 
@@ -43,19 +102,19 @@
             refer to the real name of Blackbeard in our world: Edward Teach.
     </p>
     <h2>Derivatives products</h2>
-    <img src="./public/img/One-Piece-Wallpaper-Widescreen-1095x616 1.webp" alt="image One Piece 4">
+    <img src="../public/img/One-Piece-Wallpaper-Widescreen-1095x616 1.webp" alt="image One Piece 4">
     <p>The manga has had an animated adaptation since October 1999. 
         It spans over 1,000 episodes and, like the manga, is still ongoing. In addition to adapting the manga story, 
         there have been 15 original animated films, the latest of which was released in France in August 2022.
     </p>
     <h2>Extract</h2>
-    <img src="./public/img/op 1.webp">
+    <img src="../public/img/one_piece_english.jpg">
     <footer class="footer">
         <button>
-            <img src="./public/img/mmi.svg" alt="logo MMI" class="logo_mmi">
+            <img src="../public/img/mmi.svg" alt="logo MMI" class="logo_mmi">
         </button>
         <h3>Dalil Hammachi</h3>
-        <p class="descriptif">Project carried out as part of the BUT MMI studies</p>
+        <p class="descriptif">This site is realized within the framework of the studies in BUT MMI</p>
     </footer>
 </body>
 </html>

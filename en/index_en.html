@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../src/css/style.css">
     <title>Page d'accueil</title>
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
@@ -14,7 +14,7 @@
         <a href="./index.html" class="header_nom_site">As Time Flies</a>
 
         <button class="version_anglaise">
-            <a href="./src/en/index_en.html">
+            <a href="../index.html">
             <img src="./public/img/uk.webp" alt="image du drapeau américain" class="drapeau_americain">
             </a>
         </button>
@@ -26,20 +26,20 @@
         <nav class="header_menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu_list">
                 <li class="menu__item">
-                    <a class="menu__link" href="./index.html">accueil</a>
+                    <a class="menu__link" href="./index.html">Home</a>
                 </li>
 
                 <li>
-                <button class="menu__link " @click="menuArticle = !menuArticle">articles</button>
+                <button class="menu__link " @click="menuArticle = !menuArticle">Articles</button>
                 <nav x-show="menuArticle"x-transition>
 
                     <ul class="menu_articles">
                         <li class="menu__item">
-                            <a class="menu__link__article" href="/public/img/w (3).webp">wavin' flag</a>
+                            <a class="menu__link__article" href="./wavin_flag_en.html">wavin' flag</a>
                         </li>
 
                         <li class="menu__item">
-                            <a class="menu__link__article" href="../en/">One Piece</a>
+                            <a class="menu__link__article" href="./one_piece_en.html">One Piece</a>
                         </li>
 
                         <li class="menu__item">
@@ -47,30 +47,30 @@
                         </li>
 
                         <li class="menu__item">
-                            <a class="menu__link__article" href="./energie_renouvelable.html">Energies Renouvelables</a>
+                            <a class="menu__link__article" href="./energie_renouvelable.html">Renewable Energy</a>
                         </li>
 
                         <li class="menu__item">
                             <a class="menu__link__article" href="./disneyland.html">Disnayland</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link__article" href="./rechauffement_climatique.html">Réchauffement Climatique</a>
+                            <a class="menu__link__article" href="./rechauffement_climatique.html">Climate Change</a>
                         </li>
                     </ul>
                 </nav>
 
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="./a_propos.html">A propos</a>
+                    <a class="menu__link" href="./about.html">About</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="./autres_projets.html">Autres Projets</a>
+                    <a class="menu__link" href="./other_project.html">Other Projets</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="./contact.html">Contact</a>
+                    <a class="menu__link" href="./contact_en.html">Contact</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="./en_savoir_plus.html">En Savoir Plus</a>
+                    <a class="menu__link" href="./learn_more.html">Learn More</a>
                 </li>
          
             </ul>
@@ -83,49 +83,49 @@
             <div class="carrousel_parent-ecrans" x-ref="parent">
                 <div id="ecran-1" class="carrousel_ecran">
                     <figure>
-                        <a href="./wavin_flag.html">
-                            <img src="./public/img/w (3).webp" alt="image ecran 1">
+                        <a href="./wavin_flag_en.html">
+                            <img src="../public/img/w (3).webp" alt="image ecran 1">
                             <figcaption>Wavin' Flag</figcaption>
                         </a>
                     </figure>
                 </div>
                 <div id="ecran-2" class="carrousel_ecran"> 
                     <figure>
-                        <a href="./one_piece.html">
-                            <img src="./public/img/one_piece 1.webp" alt="image ecran 2">
+                        <a href="../en/one_piece_en.html">
+                            <img src="../public/img/one_piece 1.webp" alt="image ecran 2">
                             <figcaption>One Piece</figcaption>
                         </a>
                     </figure>
                 </div>
                 <div id="ecran-3" class="carrousel_ecran">
                     <figure>
-                        <a href="./toy_story.html">
-                            <img src="./public/img/OIP 2.webp" alt="image ecran 3">
+                        <a href="../en/toy_story_en.html">
+                            <img src="../public/img/OIP 2.webp" alt="image ecran 3">
                             <figcaption>Toy Story 3</figcaption>
                         </a>
                     </figure>
                 </div>
                 <div id="ecran-4" class="carrousel_ecran">
                     <figure>
-                        <a href="./energie_renouvelable.html">
-                            <img src="./public/img/energie-renouvelable 3.webp" alt="image ecran 4">
-                            <figcaption>Energies Renouvelables</figcaption>
+                        <a href="./renewable_enery.html">
+                            <img src="../public/img/energie-renouvelable 3.webp" alt="image ecran 4">
+                            <figcaption>Renewable Energy</figcaption>
                         </a>    
                     </figure>
                 </div>
                 <div id="ecran-5" class="carrousel_ecran">
                     <figure>
-                        <a href="./disneyland.html">
-                            <img src="./public/img/disney1 (1).webp" alt="image ecran 5">
+                        <a href="./disneyland_en.html">
+                            <img src="../public/img/disney1 (1).webp" alt="image ecran 5">
                             <figcaption>Disnayland</figcaption>
                         </a>
                     </figure>
                 </div>
                 <div id="ecran-6" class="carrousel_ecran">
                     <figure>
-                        <a href="./rechauffement_climatique.html">
-                            <img src="./public/img/rech.webp" alt="image ecran 6">
-                            <figcaption>Réchauffement Climatique</figcaption>
+                        <a href="./climate_change.html">
+                            <img src="../public/img/rech.webp" alt="image ecran 6">
+                            <figcaption>Climate Change</figcaption>
                         </a>
                     </figure>
                 </div>
@@ -134,13 +134,13 @@
                 <li><a href="#ecran-1" class="caroussel_lien">Wavin' Flag</a></li>
                 <li><a href="#ecran-2" class="caroussel_lien">One Piece</a></li>
                 <li><a href="#ecran-3" class="caroussel_lien">Toy Story</a></li>
-                <li><a href="#ecran-4" class="caroussel_lien">Energies Renouvelables</a></li>
+                <li><a href="#ecran-4" class="caroussel_lien">Renewable Energy</a></li>
                 <li><a href="#ecran-5" class="caroussel_lien">Disnayland</a></li>
-                <li><a href="#ecran-6" class="caroussel_lien">Réchauffement Climatique</a></li>
+                <li><a href="#ecran-6" class="caroussel_lien">Climate Change</a></li>
             </ul>
         </div>
     <p>
-        Bienvenu sur mon site. Dans celui-ci vous découvrirez des articles sur le Film Toy Story 3, le manga One Piece, la musique Wavin' Flag du chanteur Knaan, le parc Disneyland Paris, le réchauffement climatique et les énergies renouvelables.
+        Welcome to my website. In this one you will discover articles about the Toy Story 3 movie, the One Piece manga, the music Wavin' Flag by the singer Knaan, the Disneyland Paris park, global warming and renewable energies.
     </p>
     </main>
     <footer class="footer">
@@ -148,7 +148,7 @@
             <img src="./public/img/mmi.svg" alt="logo MMI" class="logo_mmi">
         </button>
         <h3>Dalil Hammachi</h3>
-        <p class="descriptif">Ce site est réalisé dans le cadre des étude en BUT MMI</p>
+        <p class="descriptif">This site is realized within the framework of the studies in BUT MMI</p>
     </footer>
 </body>
 </html>

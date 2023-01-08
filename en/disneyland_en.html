@@ -1,21 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ menuIsOpen: false, menuArticle: false }">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Disneyland Paris</title>
+    <title>Disneyland</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
     <header class="header">
-        <a href="./index.html" class="header_nom_site">As Time Flies</a>
-        <button>
-            <img src="./public/img/uk.webp" alt="image du drapeau américain">
+        <a href="../en/index_en.html" class="header_nom_site">As Time Flies</a>
+
+        <button class="version_anglaise">
+            <a href="../disneyland.html">
+            <img src="./public/img/uk.webp" alt="image du drapeau américain" class="drapeau_americain">
+            </a>
         </button>
-        <button class="header__menu-btn menu-btn">
+
+        <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
             <span class="menu-btn__bar"></span>
         </button>
+
+        <nav class="header_menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu_list">
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/index_en.html">Home</a>
+                </li>
+                <li>
+                    <button class="menu__link " @click="menuArticle = !menuArticle">articles</button>
+                    <nav x-show="menuArticle" x-transition>
+    
+                        <ul class="menu_articles">
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/wavin_flag_en.html">wavin' flag</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/one_piece_en.html">One Piece</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/toy_story_en.html">Toy Story 3</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/renewable_enery.html">Renewable Energy</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/disneyland_en.html">Disnayland</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link__article" href="../en/climate_change.html">Climate Change</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/other_project.html">Other Project</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/contact_en.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../en/learn_more.html">Learn More</a>
+                </li>
+         
+            </ul>
+
+        </nav>
+
     </header>
     <h1>Disneyland</h1>
     <img src="./public/img/disney1 (3).webp" alt="image disneyland 1">
@@ -50,7 +109,7 @@
             <img src="./public/img/mmi.svg" alt="logo MMI" class="logo_mmi">
         </button>
         <h3>Dalil Hammachi</h3>
-        <p class="descriptif">Project carried out as part of the BUT MMI studies</p>
+        <p class="descriptif">This site is realized within the framework of the studies in BUT MMI</p>
     </footer>
 </body>
 </html>
