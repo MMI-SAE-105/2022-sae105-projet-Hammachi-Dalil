@@ -12,3 +12,8 @@ img {
 .image_frise {
     border: 0.5vh solid var(--color_subtitle);
 }
+
+video {
+    width: 70vh; 
+    margin: 0 auto; 
+}
