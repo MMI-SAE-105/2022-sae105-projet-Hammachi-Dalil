@@ -16,7 +16,7 @@
     justify-content: center;
     transform: translateX(100%);
     visibility: hidden;
-    transition: all 1s;
+    transition: all 0.2s;
 }
 
 .menu--open {

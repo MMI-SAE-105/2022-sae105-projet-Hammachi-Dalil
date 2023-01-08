@@ -20,7 +20,7 @@
             <span class="menu-btn__bar"></span>
         </button>
 
-        <nav class="header_menu menu" x-show="menuIsOpen" x-transition>
+        <nav class="header_menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu_list">
                 <li class="menu__item">
                     <a class="menu__link" href="./index.html">accueil</a>
@@ -75,11 +75,50 @@
         </nav>
 
     </header>
-    <ul>
-        <li>
-            
-        </li>
-    </ul>
+    <main>
+        <h1> Autres Projets </h1>
+        <ul>
+            <li class="menu__item">
+                <a class="menu__link" href="">Back to Back</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Dicta</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Discover-e</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Jibun</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Mind_Uploading.exe</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Mon Nindo</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Rake over the ashes</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Reminder</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Reverse Footage</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Sweet Old Times</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Tengu Road</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Timeproof Cybersoul</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">Wikipiece</a>
+            </li>
+        </ul>
+    </main>
     <footer class="footer">
         <button>
             <img src="./public/img/mmi.svg" alt="logo MMI" class="logo_mmi">

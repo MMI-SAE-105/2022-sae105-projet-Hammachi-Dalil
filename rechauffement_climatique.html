@@ -20,7 +20,7 @@
             <span class="menu-btn__bar"></span>
         </button>
 
-        <nav class="header_menu menu" x-show="menuIsOpen" x-transition>
+        <nav class="header_menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu_list">
                 <li class="menu__item">
                     <a class="menu__link" href="./index.html">accueil</a>

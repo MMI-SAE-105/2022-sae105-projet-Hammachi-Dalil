@@ -20,7 +20,7 @@
             <span class="menu-btn__bar"></span>
         </button>
 
-        <nav class="header_menu menu" x-show="menuIsOpen" x-transition>
+        <nav class="header_menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu_list">
                 <li class="menu__item">
                     <a class="menu__link" href="./index.html">accueil</a>
@@ -75,6 +75,7 @@
         </nav>
 
     </header>
+    <main>
     <h1>One Piece</h1>
     <img src="./public/img/one_piece 1.webp" alt="image 1 One Piece">
     <h2>Un manga au succès planétaire</h2>
@@ -109,6 +110,7 @@
     </p>
     <h2>Extrait</h2>
     <img src="./public/img/op 1.webp">
+    </main>
     <footer class="footer">
         <button>
             <img src="./public/img/mmi.svg" alt="logo MMI" class="logo_mmi">

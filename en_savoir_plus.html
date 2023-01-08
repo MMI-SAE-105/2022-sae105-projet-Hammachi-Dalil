@@ -20,7 +20,7 @@
             <span class="menu-btn__bar"></span>
         </button>
 
-        <nav class="header_menu menu" x-show="menuIsOpen" x-transition>
+        <nav class="header_menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu_list">
                 <li class="menu__item">
                     <a class="menu__link" href="./index.html">accueil</a>
@@ -78,7 +78,106 @@
 
     <main>
         <h1>En Savoir Plus</h1>
+        <ul class="disney-timeline">
+            <li>
+              <div class="timeline-badge">1</div>
+              <div class="timeline-panel">
+                <h3>Disneyland Park</h3>
+                <p>Le premier parc Disneyland, situé à Anaheim en Californie, a ouvert ses portes en 1955. Il est le parc le plus ancien et le plus célèbre de la chaîne Disneyland.</p>
+                <img src="./public/img/anaheim.jpg" alt="image disney anaheim" class="image_frise">
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-badge">2</div>
+              <div class="timeline-panel">
+                <h3>Walt Disney World Resort</h3>
+                <p>Le complexe de loisirs Walt Disney World Resort, situé à Orlando en Floride, a ouvert ses portes en 1971. Il comprend quatre parcs à thèmes, deux parcs aquatiques, plusieurs hôtels et un golf.</p>
+                <img src="./public/img/floride.webp" alt="image disney Floride" class="image_frise">
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-badge">3</div>
+              <div class="timeline-panel">
+                <h3>Disneyland Paris</h3>
+                <p>Le parc Disneyland Paris, situé en Île-de-France en France, a ouvert ses portes en 1992. Il est le deuxième parc Disneyland en termes de fréquentation.</p>
+                <img src="./public/img/disney1 (3).webp" alt="image disney Paris" class="image_frise">
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-badge">4</div>
+              <div class="timeline-panel">
+                <h3>Tokyo Disney Resort</h3>
+                <p>Le complexe de loisirs Tokyo Disney Resort, situé à Urayasu au Japon, a ouvert ses portes en 1983. Il comprend deux parcs à thèmes, un parc aquatique et plusieurs hôtels.</p>
+                <img src="./public/img/tokyo.jpg" alt="image disney Japon" class="image_frise">
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-badge">5</div>
+              <div class="timeline-panel">
+                <h3>Hong Kong Disneyland</h3>
+                <p>Le parc Hong Kong Disneyland, situé à Lantau Island à Hong Kong, a ouvert ses portes en 2005. C'est le parc Disneyland le plus petit en termes de superficie.</p>
+                <img src="./public/img/Castle-of-Magical-Dreams-Hong-Kong-Disneyland-3.jpg" alt="image disney hong kong" class="image_frise">
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-badge">6</div>
+              <div class="timeline-panel">
+                <h3>Shanghai Disney Resort</h3>
+                <p>Le complexe de loisirs Shanghai Disney Resort, situé à Shanghai en Chine, a ouvert ses portes en 2016. Il comprend un parc à thèmes, deux hôtels et un golf.</p>
+                <img src="./public/img/shangai.jpg" alt="image disney Shanghai" class="image_frise">
+              </div>
+            </li>
+
+          </ul>
+          <h1> Filmographie </h1>
+          <p>Lee Unkrich est un réalisateur de films d’animations qui travail pour les studios Pixar. Il a réalisé les 4 films Toy Story, Coco, Nemo, Monstre et Cie, Monstre Academy, 1001 Pattes et Le Voyage d’Arlo.</p>
+
+          <br>
+
+          <div class="filmographie">
+            <img src="./public/img/ts2.jpg" alt="image toy story">
+          </div>
+          <figcaption>Toy Story est un film des studio pixar réalisé par Lee Unkrich sorti le 2 Février 2000 et est disponible en streaming sur disney + . Il est la suite du premier opus qui a connu un grand succès.</figcaption>
+          <br>
+
+          <div class="filmographie">
+            <img src="./public/img/ts3.jpg" alt="image toy story">
+          </div>
+          <figcaption>Toy Story 3 est un film des studios pixar réalisé par Lee Unlkrich et sorti le 14 juillet 2010. 3e opus de la série, il nous raconte les aventure de notre bande de jouet préférés quand leur propriétaire doit déménager pour aller à l’université. </figcaption>
+          <br>
+
+          <div class="filmographie">
+            <img src="./public/img/coco.jpg" alt="image toy story">
+          </div>
+          <figcaption>Coco est un film des studios Pixar r éalisé par Lee Unkrich sorti le 15 Novembre 2017. Il raconte l’histoire d’un jeune homme mexicain, Miguel, qui souhaite devenir musicien mais dont la musique est interdite au sein de sa famille à cause de son grand-père, qu’il cherchera a retouver dans le monde des mort.</figcaption>
+          <br>
+
+          <div class="filmographie">
+            <img src="./public/img/nemo.jpg" alt="image toy story">
+          </div>
+          <figcaption>Le monde de Nemo est un film des studios Pixar réalisé par Lee Unkrich sorti le 16 Janvier 2013.  Le film reconte l’histoire de Marin, un poisson clown à la recherche de son fils Nemo disparu lors d’une sortie scolaire à l’aide de Dory, un poisson chirurgien amnésique.</figcaption>
+          <br>
+
+          <div class="filmographie">
+            <img src="./public/img/monstre_et_cie.jpg" alt="image toy story">
+          </div>
+          <figcaption>Monstre et Cie et un film d’animation des studios pixar réalisé par Lee Unkrich sorti le 20 mars 2002. Le film raconte l’histoire de monstre qui se nourrissent de la peur des enfant pour s’alimenter en énergie. Les monstres ont peur des enfant alors quand une jeune fille infiltre le monde des monstre c’est la panique.</figcaption>
+          <br> <br> <br>
+
+          <h1>Glossaire</h1>
+
+          <p>Réchauffement Climatique : réchauffement du climat global de la planète du a l’augmentation du CO2 dans l’atmosphère</p>
+          <p>Energies Renouvelables : Toutes les énergies qui sont réutilisable a volonté à l’échelle humaine et qui ne polluent pas la planète. Elles sont le contraire des énergies fossiles. </p>
+          <p>One Piece : Trésor légendaire laissé par  le roi des pirates Gold Roger. Personne ne sait ce qu’il contient au point où certain doute de son existance, mais c’est a cause de ce trésor que l’âge d’or de la piraterie à eu lieu. c’est ce trésor qui donne son nom au manga.</p>
+          <p>Accord de Paris :
+            Accord signé le 12 decembre 2015 par 174 pays dans un objectif commun de réduire les émissions de gaz à effet de serre pour limiter l’augmentation de la température globale de la planète a 1,5°C de plus par rapport a l’ère pré-industrielle.</p>
     </main>
+
 
     <footer class="footer">
         <button>

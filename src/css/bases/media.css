@@ -2,3 +2,13 @@ img {
     max-width: 100%;
     
 }
+
+.filmographie {
+    border: 10px solid var(--color_subtitle);
+    width: 30vh; 
+    margin: 0 auto; 
+}
+
+.image_frise {
+    border: 0.5vh solid var(--color_subtitle);
+}

@@ -2,10 +2,15 @@ body {
     background-color: #1C467A;
 }
 
+main {
+    min-height: calc(100vh - 53.33px - 189.13px);
+}
+
 p {
     color: var(--color_text);
     font-family: "Kanit", "Arial",  sans-serif;
     margin: 1rem;
+    font-size: var(--text);
 }
 
 h3 {
@@ -34,10 +39,149 @@ button {
 figcaption {
     font-family: "Kanit";
     color: var(--color_text);
-    font-size: var(--subtitle-1);
+    font-size: var(--text);
+    margin-left: 1vh;
 }
 
 ul {
     font-size: var(--text);
     font-family: "dangrek";
 }
+
+.input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-left: 1.5vh; 
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+   }
+   
+   .input::placeholder {
+    color: #ffffff;
+   }
+   
+   .input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+
+   .button {
+    color: #ffffff;
+    padding: 0.7em 1.7em;
+    margin-left: 1.5vh;
+    font-size: 14px;
+    border-radius: 0.5em;
+    background: var(--header--footer);
+    border: 1px solid var(--color_subtitle);
+    transition: all 0.2s;
+    box-shadow: 6px 6px 12px #091833;
+   }
+
+   .disney-timeline {
+    position: relative;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+  }
+  
+  .disney-timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #ddd;
+  }
+  
+  .disney-timeline > li {
+    position: relative;
+    margin-bottom: 20px;
+    min-height: 100px;
+  }
+  
+  .disney-timeline > li:before,
+  .disney-timeline > li:after {
+    content: "";
+    display: table;
+  }
+  
+  .disney-timeline > li:after {
+    clear: both;
+  }
+  
+  .disney-timeline > li:before,
+  .disney-timeline > li:after {
+    content: "";
+    display: table;
+  }
+  
+  .disney-timeline > li:after {
+    clear: both;
+  }
+  
+  .disney-timeline > li > .timeline-panel {
+    position: relative;
+    width: 46%;
+    float: left;
+    right: -50%;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 20px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  }
+  
+  .disney-timeline > li > .timeline-panel:before {
+    content: '';
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+  }
+  
+  .disney-timeline > li > .timeline-panel:after {
+    content: '';
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+  }
+  
+  .disney-timeline > li > .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #999999;
+    z-index: 0;
+    border-radius: 50%;
+    border: 1px solid #fff;
+  }
+   

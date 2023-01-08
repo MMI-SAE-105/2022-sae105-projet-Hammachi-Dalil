@@ -20,7 +20,7 @@
             <span class="menu-btn__bar"></span>
         </button>
 
-        <nav class="header_menu menu" x-show="menuIsOpen" x-transition>
+        <nav class="header_menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu_list">
                 <li class="menu__item">
                     <a class="menu__link" href="./index.html">accueil</a>
@@ -78,6 +78,11 @@
 
     <main>
         <h1>Contact</h1>
+        <input placeholder="Nom" type="text" class="input" required=""> <br>
+        <input placeholder="Prénom" type="text" class="input" required=""> <br>
+        <input placeholder="e-mail" type="email" class="input" required=""> <br> <br> <br>
+        <input placeholder="Messages" type="text" class="input" required=""> <br> <br>
+        <input type="button" value="Envoyer" class="button">
     </main>
 
     <footer class="footer">
